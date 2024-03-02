@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjectPRN211
 {
-    public partial class frmLogin : Form
+    public partial class frmRegister : Form
     {
-        public frmLogin()
+        public frmRegister()
         {
             InitializeComponent();
         }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
