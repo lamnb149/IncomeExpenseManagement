@@ -16,5 +16,10 @@ namespace ProjectPRN211
         {
             InitializeComponent();
         }
+
+        private void frmShowIncomeExpense_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
