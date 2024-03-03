@@ -79,7 +79,7 @@
             this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
             this.gunaGradientButton1.Image = null;
             this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton1.Location = new System.Drawing.Point(387, 246);
+            this.gunaGradientButton1.Location = new System.Drawing.Point(388, 246);
             this.gunaGradientButton1.Name = "gunaGradientButton1";
             this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.DarkSlateGray;
             this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.DarkCyan;
@@ -120,9 +120,9 @@
             this.bunifuLabel3.Location = new System.Drawing.Point(530, 311);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(64, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(69, 25);
             this.bunifuLabel3.TabIndex = 10;
-            this.bunifuLabel3.Text = "Sign Up";
+            this.bunifuLabel3.Text = "Register";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
