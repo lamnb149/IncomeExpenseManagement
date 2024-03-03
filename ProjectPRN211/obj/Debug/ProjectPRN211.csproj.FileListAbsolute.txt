@@ -78,3 +78,4 @@ D:\FPT_Semesters\FPT_KI_5\PRN211\Project\ProjectPRN211\ProjectPRN211\obj\Debug\P
 D:\FPT_Semesters\FPT_KI_5\PRN211\Project\ProjectPRN211\ProjectPRN211\obj\Debug\ProjectPRN211.frmChangePassword.resources
 D:\FPT_Semesters\FPT_KI_5\PRN211\Project\ProjectPRN211\ProjectPRN211\obj\Debug\ProjectPRN211.frmRegister.resources
 D:\FPT_Semesters\FPT_KI_5\PRN211\Project\ProjectPRN211\ProjectPRN211\obj\Debug\ProjectPRN211.frmMemberManagement.resources
+D:\FPT_Semesters\FPT_KI_5\PRN211\Project\ProjectPRN211\ProjectPRN211\obj\Debug\ProjectPRN211.frmMemberDetail.resources
