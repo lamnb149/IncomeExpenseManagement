@@ -16,7 +16,7 @@ namespace ProjectPRN211
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMemberDetail());
+            Application.Run(new frmMemberManagement());
         }
     }
 }

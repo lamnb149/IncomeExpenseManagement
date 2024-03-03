@@ -17,6 +17,9 @@ namespace ProjectPRN211
             InitializeComponent();
         }
 
-        
+        private void frmChangePassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

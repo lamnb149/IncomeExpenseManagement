@@ -117,4 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAAdCAYAAABR0bkaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVGhD7dExDcAwEMDAp9khKqBgSD+8CiMAWiUk3oOH
+        k7w7rpHv/cxPdfaD2BG9q9B54Ih6joBwBIQjIBwB4QgIR0A4AsIREI6AcASEIyAcAeEICEdAOALCERCO
+        gHAEhCMgHAHhCAhHQDgCwhEQjoA4D9rItUN12sj1A3ALodpwayTyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAAdCAYAAABR0bkaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVGhD7dExDcAwEMDAp9khKqBgSD+8CiMAWiUk3oOH
+        k7w7rpHv/cxPdfaD2BG9q9B54Ih6joBwBIQjIBwB4QgIR0A4AsIREI6AcASEIyAcAeEICEdAOALCERCO
+        gHAEhCMgHAHhCAhHQDgCwhEQjoA4D9rItUN12sj1A3ALodpwayTyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHYAAAAnCAYAAADadbxDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACQSURBVHhe7dExDcMwAABB0+wQFVAwuA6vwgiAVg6M1w0n
+        /f7jNdf3/bl+dOynY8c4T0Kep8b2GBtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtl
+        bJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUc/TY657Bx3HXPcf1A8Sv6ArIwkA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHYAAAAnCAYAAADadbxDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACQSURBVHhe7dExDcMwAABB0+wQFVAwuA6vwgiAVg6M1w0n
+        /f7jNdf3/bl+dOynY8c4T0Kep8b2GBtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtl
+        bJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUcZGGRtlbJSxUc/TY657Bx3HXPcf1A8Sv6ArIwkA
+        AAAASUVORK5CYII=
+</value>
+  </data>
 </root>
