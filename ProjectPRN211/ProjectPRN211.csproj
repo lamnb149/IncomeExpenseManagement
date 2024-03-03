@@ -162,11 +162,29 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMemberDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberDetail.Designer.cs">
+      <DependentUpon>frmMemberDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberManagement.Designer.cs">
+      <DependentUpon>frmMemberManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowIncomeExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowIncomeExpense.Designer.cs">
+      <DependentUpon>frmShowIncomeExpense.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,6 +193,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberDetail.resx">
+      <DependentUpon>frmMemberDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberManagement.resx">
+      <DependentUpon>frmMemberManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
