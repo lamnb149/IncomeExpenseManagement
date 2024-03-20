@@ -113,6 +113,16 @@ namespace ProjectPRN211.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_calendar_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_calendar_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_email_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8_email_30", resourceCulture);
@@ -133,9 +143,39 @@ namespace ProjectPRN211.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_return_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_return_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_saving_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_saving_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_username_30__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8_username_30__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_week_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_week_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

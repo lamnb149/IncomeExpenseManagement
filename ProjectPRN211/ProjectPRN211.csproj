@@ -277,7 +277,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BudgetDAO.cs" />
+    <Compile Include="DAL\CategoryDAO.cs" />
     <Compile Include="DAL\DAO.cs" />
+    <Compile Include="DAL\SavingGoalDAO.cs" />
+    <Compile Include="DAL\TransactionDAO.cs" />
+    <Compile Include="DAL\UserDAO.cs" />
     <Compile Include="frmChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +294,12 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMemberDetail.cs">
       <SubType>Form</SubType>
@@ -314,6 +325,10 @@
     <Compile Include="frmShowIncomeExpense.Designer.cs">
       <DependentUpon>frmShowIncomeExpense.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Budget.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\SavingGoal.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -322,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMemberDetail.resx">
       <DependentUpon>frmMemberDetail.cs</DependentUpon>
@@ -405,7 +423,21 @@
   <ItemGroup>
     <None Include="Resources\Line 4.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-week-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-saving-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
