@@ -8,7 +8,6 @@ namespace ProjectPRN211.Models
 {
     internal class SavingGoal
     {
-        public int GoalId { get; set; }
         public string Username { get; set; }
         public string Name { get; set; }
         public decimal TargetAmount { get; set; }
@@ -16,9 +15,8 @@ namespace ProjectPRN211.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        public SavingGoal(int goalId, string username, string name, decimal targetAmount, decimal currentAmount, DateTime startDate, DateTime endDate)
+        public SavingGoal(string username, string name, decimal targetAmount, decimal currentAmount, DateTime startDate, DateTime endDate)
         {
-            GoalId = goalId;
             Username = username;
             Name = name;
             TargetAmount = targetAmount;

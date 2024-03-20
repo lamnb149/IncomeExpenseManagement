@@ -46,12 +46,22 @@ namespace ProjectPRN211.DAL
             return DAO.ChangeData(sql, parameters);
         }
 
-        public static bool DeleteBudget(int categoryId, string username)
+        public static bool DeleteBudgetWithCategory(int categoryId, string username)
         {
             string sql = "DELETE FROM Budgets WHERE CategoryId = @CategoryId AND Username = @Username";
             SqlParameter[] parameters = new SqlParameter[]
             {
             new SqlParameter("@CategoryId", SqlDbType.Int) { Value = categoryId },
+            new SqlParameter("@Username", SqlDbType.VarChar) { Value = username }
+            };
+            return DAO.ChangeData(sql, parameters);
+        }
+
+        public static bool DeleteBudget(string username)
+        {
+            string sql = "DELETE FROM Budgets WHERE Username = @Username";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
             new SqlParameter("@Username", SqlDbType.VarChar) { Value = username }
             };
             return DAO.ChangeData(sql, parameters);

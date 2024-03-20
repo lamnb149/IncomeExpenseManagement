@@ -116,19 +116,40 @@ namespace ProjectPRN211
             if (dialogResult == DialogResult.Yes)
             {
                 string username = txtUsername.Text;
-                try
+                List<Budget> budgets = BudgetDAO.GetAllBudgets();
+                List<SavingGoal> savingGoals = SavingGoalDAO.GetAllSavingGoals();
+                List<Transaction> transactions = TransactionDAO.GetAllTransactions();
+                BudgetDAO.DeleteBudget(username);
+                SavingGoalDAO.DeleteSavingGoal(username);
+                List<Transaction> searchedTransaction = transactions.Where(x => x.Username == username).ToList();
+                if (searchedTransaction.Count > 0)
                 {
-                    UserDAO.DeleteUser(username);
-                    LoadDgvMember(UserDAO.GetAllUsers());
+                    foreach (var trans in searchedTransaction)
+                    {
+                        TransactionDAO.DeleteTransaction(trans.TransactionId);
+                    }
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("User has relationship!!!");
-                }
+                UserDAO.DeleteUser(username);
+                LoadDgvMember(UserDAO.GetAllUsers());
             }
             else
             {
                 LoadDgvMember(UserDAO.GetAllUsers());
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text;
+            string firstName = txtFirstName.Text;
+            string lastName = txtLastName.Text;
+            string password = txtPassword.Text;
+            int role = 1;
+            User updatedUser = UserDAO.GetAllUsers().FirstOrDefault(x => x.Username == txtUsername.Text);
+            if (updatedUser != null) 
+            {
+                MessageBox.Show("Update Successfully!", "Update", MessageBoxButtons.OK);
+                UserDAO.UpdateUser(updatedUser);
             }
         }
     }

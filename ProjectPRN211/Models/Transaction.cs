@@ -13,12 +13,12 @@ namespace ProjectPRN211.Models
         public int CategoryId { get; set; }
         public decimal Amount { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-        public DateTime DeletedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public DateTime? DeletedDate { get; set; }
         public string Description { get; set; }
         public int Type { get; set; }
 
-        public Transaction(int transactionId, string username, int categoryId, decimal amount, DateTime createdDate, DateTime updatedDate, DateTime deletedDate, string description, int type)
+        public Transaction(int transactionId, string username, int categoryId, decimal amount, DateTime createdDate, DateTime? updatedDate, DateTime? deletedDate, string description, int type)
         {
             TransactionId = transactionId;
             Username = username;

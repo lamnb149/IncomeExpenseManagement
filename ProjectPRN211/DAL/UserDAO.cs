@@ -42,7 +42,7 @@ namespace ProjectPRN211.DAL
 
         public static bool UpdateUser(User user)
         {
-            string sql = "UPDATE Users SET FirstName = @FirstName, MidName = @MidName, LastName = @LastName, " +
+            string sql = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, " +
                          "Password = @Password, Email = @Email, CreatedDate = @CreatedDate, Role = @Role " +
                          "WHERE Username = @Username";
 

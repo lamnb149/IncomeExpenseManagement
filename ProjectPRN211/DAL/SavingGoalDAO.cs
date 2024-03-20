@@ -19,7 +19,6 @@ namespace ProjectPRN211.DAL
             foreach (DataRow dr in dt.Rows)
             {
                 savingGoals.Add(new SavingGoal(
-                        Convert.ToInt32(dr["GoalId"]),
                         dr["Username"].ToString(),
                         dr["Name"].ToString(),
                         Convert.ToDecimal(dr["TargetAmount"]),
@@ -49,19 +48,19 @@ namespace ProjectPRN211.DAL
             return DAO.ChangeData(sql, parameters);
         }
 
-        public static bool DeleteSavingGoal(int goalId)
+        public static bool DeleteSavingGoal(string username)
         {
-            string sql = "DELETE FROM SavingGoals WHERE GoalId = @GoalId";
-            SqlParameter parameter = new SqlParameter("@GoalId", SqlDbType.Int);
-            parameter.Value = goalId;
+            string sql = "DELETE FROM SavingGoals WHERE Username = @Username";
+            SqlParameter parameter = new SqlParameter("@Username", SqlDbType.VarChar);
+            parameter.Value = username;
             return DAO.ChangeData(sql, parameter);
         }
 
         public static bool UpdateSavingGoal(SavingGoal savingGoal)
         {
-            string sql = "UPDATE SavingGoals SET Username = @Username, Name = @Name, TargetAmount = @TargetAmount, " +
+            string sql = "UPDATE SavingGoals SET Name = @Name, TargetAmount = @TargetAmount, " +
                          "CurrentAmount = @CurrentAmount, StartDate = @StartDate, EndDate = @EndDate " +
-                         "WHERE GoalId = @GoalId";
+                         "WHERE Username = @Username";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
@@ -71,7 +70,6 @@ namespace ProjectPRN211.DAL
             new SqlParameter("@CurrentAmount", SqlDbType.Decimal) { Value = savingGoal.CurrentAmount },
             new SqlParameter("@StartDate", SqlDbType.DateTime) { Value = savingGoal.StartDate },
             new SqlParameter("@EndDate", SqlDbType.DateTime) { Value = savingGoal.EndDate },
-            new SqlParameter("@GoalId", SqlDbType.Int) { Value = savingGoal.GoalId }
             };
 
             return DAO.ChangeData(sql, parameters);

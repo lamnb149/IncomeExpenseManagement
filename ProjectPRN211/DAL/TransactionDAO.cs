@@ -24,8 +24,8 @@ namespace ProjectPRN211.DAL
                     Convert.ToInt32(dr["CategoryId"]),
                     Convert.ToDecimal(dr["Amount"]),
                     Convert.ToDateTime(dr["CreatedDate"]),
-                    Convert.ToDateTime(dr["UpdatedDate"]),
-                    Convert.ToDateTime(dr["DeletedDate"]),
+                    dr["UpdatedDate"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(dr["UpdatedDate"]),
+                    dr["DeletedDate"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(dr["DeletedDate"]),
                     dr["Description"].ToString(),
                     Convert.ToInt32(dr["Type"])
                     ));

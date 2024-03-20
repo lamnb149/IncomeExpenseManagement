@@ -134,7 +134,7 @@
         gHAEhCMgHAHhCAhHQDgCwhEQjoA4D9rItUN12sj1A3ALodpwayTyAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnUpdate.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHYAAAAnCAYAAADadbxDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACQSURBVHhe7dExDcMwAABB0+wQFVAwuA6vwgiAVg6M1w0n
