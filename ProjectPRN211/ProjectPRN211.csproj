@@ -283,6 +283,18 @@
     <Compile Include="DAL\SavingGoalDAO.cs" />
     <Compile Include="DAL\TransactionDAO.cs" />
     <Compile Include="DAL\UserDAO.cs" />
+    <Compile Include="frmAddIncomeExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddIncomeExpense.Designer.cs">
+      <DependentUpon>frmAddIncomeExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailOwn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailOwn.Designer.cs">
+      <DependentUpon>frmDetailOwn.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,8 +344,14 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddIncomeExpense.resx">
+      <DependentUpon>frmAddIncomeExpense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChangePassword.resx">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailOwn.resx">
+      <DependentUpon>frmDetailOwn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -437,6 +455,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-saving-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

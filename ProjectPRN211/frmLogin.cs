@@ -33,15 +33,24 @@ namespace ProjectPRN211
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             bool isLogin = IsLogin(username, password);
-            int role = UserDAO.GetAllUsers().FirstOrDefault(x => x.Username == username).Role;
-            if (isLogin)
+            User user = UserDAO.GetAllUsers().FirstOrDefault(x => x.Username == username);
+            if (user != null)
             {
-                MessageBox.Show("Login Successfully!", "Login", MessageBoxButtons.OK);
-                frmMain frmMain = new frmMain() { 
-                    Username = username, 
-                    Role = role
-                };
-                frmMain.ShowDialog();
+                int role = user.Role;
+                if (isLogin)
+                {
+                    MessageBox.Show("Login Successfully!", "Login", MessageBoxButtons.OK);
+                    frmMain frmMain = new frmMain()
+                    {
+                        Username = username,
+                        Role = role
+                    };
+                    frmMain.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Password or Username!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

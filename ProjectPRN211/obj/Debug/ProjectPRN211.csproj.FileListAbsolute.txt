@@ -417,3 +417,5 @@ D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\
 D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\obj\Debug\ProjectPRN211.exe
 D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\obj\Debug\ProjectPRN211.pdb
 D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\obj\Debug\ProjectPRN211.frmMain.resources
+D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\obj\Debug\ProjectPRN211.frmDetailOwn.resources
+D:\FPT_Semesters\FPT_KI_5\PRN211\CloneXYZ\IncomeExpenseManagement\ProjectPRN211\obj\Debug\ProjectPRN211.frmAddIncomeExpense.resources

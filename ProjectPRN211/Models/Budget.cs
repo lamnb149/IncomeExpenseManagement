@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectPRN211.Models
 {
-    internal class Budget
+    public class Budget
     {
         public string Username { get; set; }
         public int CategoryId { get; set; }

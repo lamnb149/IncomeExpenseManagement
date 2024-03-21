@@ -44,8 +44,8 @@ namespace ProjectPRN211.DAL
             new SqlParameter("@CategoryId", SqlDbType.Int) { Value = transaction.CategoryId },
             new SqlParameter("@Amount", SqlDbType.Decimal) { Value = transaction.Amount },
             new SqlParameter("@CreatedDate", SqlDbType.DateTime) { Value = transaction.CreatedDate },
-            new SqlParameter("@UpdatedDate", SqlDbType.DateTime) { Value = transaction.UpdatedDate },
-            new SqlParameter("@DeletedDate", SqlDbType.DateTime) { Value = transaction.DeletedDate },
+            new SqlParameter("@UpdatedDate", SqlDbType.DateTime) { Value = (object)transaction.UpdatedDate ?? DBNull.Value },
+            new SqlParameter("@DeletedDate", SqlDbType.DateTime) { Value = (object)transaction.DeletedDate ?? DBNull.Value },
             new SqlParameter("@Description", SqlDbType.NText) { Value = transaction.Description },
             new SqlParameter("@Type", SqlDbType.Int) { Value = transaction.Type }
             };
@@ -72,8 +72,8 @@ namespace ProjectPRN211.DAL
             new SqlParameter("@CategoryId", SqlDbType.Int) { Value = transaction.CategoryId },
             new SqlParameter("@Amount", SqlDbType.Decimal) { Value = transaction.Amount },
             new SqlParameter("@CreatedDate", SqlDbType.DateTime) { Value = transaction.CreatedDate },
-            new SqlParameter("@UpdatedDate", SqlDbType.DateTime) { Value = transaction.UpdatedDate },
-            new SqlParameter("@DeletedDate", SqlDbType.DateTime) { Value = transaction.DeletedDate },
+            new SqlParameter("@UpdatedDate", SqlDbType.DateTime) { Value = (object)transaction.UpdatedDate ?? DBNull.Value },
+            new SqlParameter("@DeletedDate", SqlDbType.DateTime) { Value = (object)transaction.DeletedDate ?? DBNull.Value },
             new SqlParameter("@Description", SqlDbType.NText) { Value = transaction.Description },
             new SqlParameter("@Type", SqlDbType.Int) { Value = transaction.Type },
             new SqlParameter("@TransactionId", SqlDbType.Int) { Value = transaction.TransactionId }

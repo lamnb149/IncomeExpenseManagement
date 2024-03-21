@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectPRN211.Models
 {
-    internal class User
+    public class User
     {
 
         public string Username { set; get; }

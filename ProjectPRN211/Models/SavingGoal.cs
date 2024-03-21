@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectPRN211.Models
 {
-    internal class SavingGoal
+    public class SavingGoal
     {
         public string Username { get; set; }
         public string Name { get; set; }
